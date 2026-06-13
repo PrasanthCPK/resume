@@ -1,0 +1,14 @@
+PLACEHOLDER — Replace with your real resume.
+
+The "Download Resume" buttons in index.html link to: assets/resume.pdf
+
+To enable the download:
+  1. Export your resume as a PDF.
+  2. Name it "resume.pdf".
+  3. Place it in this folder (assets/resume.pdf).
+
+You can delete this placeholder file afterward.
+
+TIP: The site also has a built-in print stylesheet. Visitors can use
+their browser's Print (Cmd/Ctrl+P) to get a clean, recruiter-friendly
+version of the page itself — see "Print-friendly resume mode" in README.md.
