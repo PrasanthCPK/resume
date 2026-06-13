@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <title>Prasanth Chintapalli — Lead Software Engineer</title>
+  <meta name="description"
+    content="Prasanth Chintapalli — Lead Software Engineer specializing in distributed systems, cloud architecture, and engineering leadership. Java, AWS, Microservices, System Design." />
+  <meta name="author" content="Prasanth Chintapalli" />
+  <meta name="keywords"
+    content="Lead Software Engineer, Distributed Systems, Cloud Architecture, System Design, Java, AWS, Microservices, Engineering Leadership, Staff Engineer, Principal Engineer" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Prasanth Chintapalli — Lead Software Engineer" />
+  <meta property="og:description"
+    content="High-end engineering portfolio: distributed systems, cloud architecture, and technical leadership." />
+  <meta property="og:image" content="assets/img/profile.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Fonts: system stack preferred; load a single performant display face -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Structured data for SEO (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prasanth Chintapalli",
+    "jobTitle": "Lead Software Engineer",
+    "knowsAbout": ["Distributed Systems", "Cloud Architecture", "System Design", "Java", "AWS", "Microservices", "Engineering Leadership"],
+    "sameAs": [
+      "https://www.linkedin.com/in/your-handle",
+      "https://github.com/your-handle"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#about" class="skip-link">Skip to content</a>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Home">
+        <span class="nav__logo">PC</span>
+        <span class="nav__brandtext">Prasanth&nbsp;Chintapalli</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#timeline">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#systems">Systems</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="assets/resume.pdf" class="btn btn--ghost btn--sm" download>Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#about">About</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#timeline">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#systems">Systems</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         1. HERO
+         ============================================================ -->
+    <section class="hero" id="hero">
+      <!-- Particle / distributed-systems network canvas -->
+      <canvas class="hero__canvas" id="network" aria-hidden="true"></canvas>
+
+      <!-- Floating gradient blobs -->
+      <div class="blob blob--1" aria-hidden="true"></div>
+      <div class="blob blob--2" aria-hidden="true"></div>
+      <div class="blob blob--3" aria-hidden="true"></div>
+
+      <div class="hero__inner" id="heroParallax">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">
+            <span class="status-dot"></span> Available for Lead / Staff / Principal roles
+          </p>
+          <h1 class="hero__title">
+            Prasanth&nbsp;Chintapalli
+          </h1>
+          <p class="hero__role">Lead Software Engineer</p>
+
+          <p class="hero__summary">
+            I design and scale <strong>distributed systems</strong> that serve millions of users,
+            and I build the <strong>high-trust engineering teams</strong> that keep them running.
+            12+ years turning ambiguous problems into reliable, elegant architecture.
+          </p>
+
+          <!-- Animated rotating keywords -->
+          <p class="hero__rotator">
+            <span class="hero__rotator-label">Focused on</span>
+            <span class="rotator" id="rotator" aria-live="polite">
+              <span class="rotator__item">Distributed Systems</span>
+            </span>
+          </p>
+
+          <div class="hero__cta">
+            <a href="assets/resume.pdf" class="btn btn--primary" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Profile + code snippet -->
+        <div class="hero__aside reveal" data-parallax="0.04">
+          <div class="profile-card">
+            <div class="profile-card__glow" aria-hidden="true"></div>
+            <!-- Profile photo placeholder: replace assets/img/profile.svg with a real photo -->
+            <img class="profile-card__img" src="assets/img/profile.svg"
+              alt="Portrait of Prasanth Chintapalli" width="320" height="320" loading="eager" />
+            <div class="profile-card__badge">
+              <span class="profile-card__badge-dot"></span> 12+ yrs · Cloud-native
+            </div>
+          </div>
+
+          <!-- Animated typing code snippet -->
+          <div class="code-window" aria-hidden="true">
+            <div class="code-window__bar">
+              <span></span><span></span><span></span>
+              <em>architecture.java</em>
+            </div>
+            <pre class="code-window__body"><code id="typedCode"></code><span class="caret"></span></pre>
+          </div>
+        </div>
+      </div>
+
+      <a href="#stats" class="hero__scroll" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         STATISTICS (animated counters)
+         ============================================================ -->
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <div class="stat__num" data-count="12" data-suffix="+">0</div>
+          <div class="stat__label">Years of Experience</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num" data-count="25" data-suffix="+">0</div>
+          <div class="stat__label">Team Size Led</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num" data-count="40" data-suffix="+">0</div>
+          <div class="stat__label">Projects Delivered</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num" data-count="60" data-suffix="+">0</div>
+          <div class="stat__label">Systems Designed</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. ABOUT
+         ============================================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">01 — About</span>
+          <h2 class="section__title">Engineering at scale, leading with intent</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__lead reveal">
+            <p>
+              I'm a Lead Software Engineer with 12+ years building cloud-native platforms in
+              high-growth and enterprise environments. My work lives at the intersection of
+              <strong>deep technical architecture</strong> and <strong>people leadership</strong> —
+              designing systems that scale to millions of requests while growing the engineers
+              who own them.
+            </p>
+            <p>
+              I've led platform re-architectures, driven cloud migrations, and shipped
+              event-driven systems processing billions of events. I care about reliability,
+              developer experience, and shipping value incrementally.
+            </p>
+          </div>
+
+          <div class="about__cards">
+            <article class="glass-card reveal">
+              <h3>Leadership Philosophy</h3>
+              <p>Set a clear technical vision, then create the conditions for autonomy.
+                I lead through context, not control — coaching engineers to make great
+                decisions when I'm not in the room.</p>
+            </article>
+            <article class="glass-card reveal">
+              <h3>Engineering Principles</h3>
+              <ul class="ticklist">
+                <li>Simple systems beat clever ones</li>
+                <li>Design for failure; measure everything</li>
+                <li>Optimize for change, not just today</li>
+                <li>Ship small, learn fast, iterate</li>
+              </ul>
+            </article>
+            <article class="glass-card reveal">
+              <h3>Core Strengths</h3>
+              <div class="chips">
+                <span>Distributed Systems</span>
+                <span>System Design</span>
+                <span>Cloud Architecture</span>
+                <span>Team Building</span>
+                <span>Technical Strategy</span>
+                <span>Mentorship</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. TECHNICAL EXPERTISE
+         ============================================================ -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">02 — Technical Expertise</span>
+          <h2 class="section__title">A full-stack of production-grade tooling</h2>
+        </header>
+
+        <div class="expertise__grid">
+          <!-- Backend -->
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4" width="18" height="4" rx="1" /><rect x="3" y="10" width="18" height="4" rx="1" />
+                <rect x="3" y="16" width="18" height="4" rx="1" /><circle cx="7" cy="6" r=".6" fill="currentColor" />
+                <circle cx="7" cy="12" r=".6" fill="currentColor" /><circle cx="7" cy="18" r=".6" fill="currentColor" />
+              </svg>
+            </div>
+            <h3>Backend</h3>
+            <div class="skill-card__bars" data-skills>
+              <div class="skill"><span>Java</span><i data-level="95"></i></div>
+              <div class="skill"><span>Spring Boot</span><i data-level="92"></i></div>
+              <div class="skill"><span>Microservices</span><i data-level="93"></i></div>
+              <div class="skill"><span>REST APIs</span><i data-level="95"></i></div>
+              <div class="skill"><span>Event-Driven Architecture</span><i data-level="88"></i></div>
+            </div>
+          </article>
+
+          <!-- Cloud -->
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M7 18a4 4 0 010-8 5 5 0 019.6-1.5A4 4 0 1117 18H7z" />
+              </svg>
+            </div>
+            <h3>Cloud &amp; DevOps</h3>
+            <div class="skill-card__bars" data-skills>
+              <div class="skill"><span>AWS</span><i data-level="93"></i></div>
+              <div class="skill"><span>Docker</span><i data-level="90"></i></div>
+              <div class="skill"><span>Kubernetes</span><i data-level="85"></i></div>
+              <div class="skill"><span>Azure</span><i data-level="78"></i></div>
+            </div>
+          </article>
+
+          <!-- Data -->
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <ellipse cx="12" cy="5" rx="8" ry="3" /><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
+                <path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" />
+              </svg>
+            </div>
+            <h3>Data</h3>
+            <div class="skill-card__bars" data-skills>
+              <div class="skill"><span>Oracle</span><i data-level="88"></i></div>
+              <div class="skill"><span>MySQL</span><i data-level="90"></i></div>
+              <div class="skill"><span>Redis</span><i data-level="86"></i></div>
+              <div class="skill"><span>DynamoDB</span><i data-level="84"></i></div>
+              <div class="skill"><span>MongoDB</span><i data-level="82"></i></div>
+            </div>
+          </article>
+
+          <!-- Frontend -->
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6">
+                <polyline points="8 7 3 12 8 17" /><polyline points="16 7 21 12 16 17" /><line x1="13" y1="5" x2="11" y2="19" />
+              </svg>
+            </div>
+            <h3>Frontend</h3>
+            <div class="skill-card__bars" data-skills>
+              <div class="skill"><span>React</span><i data-level="88"></i></div>
+              <div class="skill"><span>TypeScript</span><i data-level="86"></i></div>
+              <div class="skill"><span>JavaScript</span><i data-level="90"></i></div>
+              <div class="skill"><span>Angular</span><i data-level="80"></i></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. CAREER TIMELINE
+         ============================================================ -->
+    <section class="section" id="timeline">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">03 — Experience</span>
+          <h2 class="section__title">A trajectory of growing scope</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <div class="tl-item__card glass-card">
+              <div class="tl-item__meta">
+                <span class="tl-item__date">2021 — Present</span>
+                <span class="tl-item__company">NimbusScale Technologies</span>
+              </div>
+              <h3 class="tl-item__role">Lead Software Engineer</h3>
+              <ul class="tl-item__points">
+                <li>Lead a 25-engineer platform org across 4 squads owning core payments &amp; identity.</li>
+                <li>Drove migration of a monolith to 60+ microservices, cutting deploy lead time 80%.</li>
+                <li>Designed event-driven backbone processing 3B+ events/day at p99 &lt; 120ms.</li>
+              </ul>
+              <div class="tl-item__tech">
+                <span>Java</span><span>Spring Boot</span><span>AWS</span><span>Kafka</span><span>Kubernetes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <div class="tl-item__card glass-card">
+              <div class="tl-item__meta">
+                <span class="tl-item__date">2017 — 2021</span>
+                <span class="tl-item__company">VeloCommerce Inc.</span>
+              </div>
+              <h3 class="tl-item__role">Senior Software Engineer → Tech Lead</h3>
+              <ul class="tl-item__points">
+                <li>Architected a high-scale e-commerce checkout handling 50K orders/min on peak days.</li>
+                <li>Introduced CI/CD &amp; observability, reducing production incidents by 65%.</li>
+                <li>Mentored 8 engineers; established the team's system design review practice.</li>
+              </ul>
+              <div class="tl-item__tech">
+                <span>Java</span><span>Microservices</span><span>Redis</span><span>MySQL</span><span>Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <div class="tl-item__card glass-card">
+              <div class="tl-item__meta">
+                <span class="tl-item__date">2014 — 2017</span>
+                <span class="tl-item__company">DataForge Systems</span>
+              </div>
+              <h3 class="tl-item__role">Software Engineer</h3>
+              <ul class="tl-item__points">
+                <li>Built REST APIs and batch pipelines for an analytics platform serving 200+ enterprises.</li>
+                <li>Optimized Oracle queries and caching layers, improving report latency by 4x.</li>
+              </ul>
+              <div class="tl-item__tech">
+                <span>Java</span><span>Spring</span><span>Oracle</span><span>REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-item__dot"></div>
+            <div class="tl-item__card glass-card">
+              <div class="tl-item__meta">
+                <span class="tl-item__date">2012 — 2014</span>
+                <span class="tl-item__company">Brightpath Software</span>
+              </div>
+              <h3 class="tl-item__role">Junior Software Engineer</h3>
+              <ul class="tl-item__points">
+                <li>Delivered features across a Java/Angular web platform in an agile team.</li>
+                <li>Owned bug triage and automated test coverage growth from 40% to 78%.</li>
+              </ul>
+              <div class="tl-item__tech">
+                <span>Java</span><span>JavaScript</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. MAJOR PROJECTS
+         ============================================================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">04 — Major Projects</span>
+          <h2 class="section__title">Systems that moved the business</h2>
+        </header>
+
+        <div class="projects__grid">
+          <article class="project-card glass-card reveal">
+            <div class="project-card__diagram">
+              <!-- Architecture diagram placeholder (SVG) -->
+              <svg viewBox="0 0 320 140" role="img" aria-label="Distributed checkout architecture diagram">
+                <defs>
+                  <linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#7c5cff" /><stop offset="1" stop-color="#27c0ff" />
+                  </linearGradient>
+                </defs>
+                <rect x="10" y="55" width="56" height="30" rx="6" fill="url(#pg1)" opacity=".85" />
+                <rect x="130" y="20" width="56" height="30" rx="6" fill="url(#pg1)" opacity=".7" />
+                <rect x="130" y="90" width="56" height="30" rx="6" fill="url(#pg1)" opacity=".7" />
+                <rect x="250" y="55" width="56" height="30" rx="6" fill="url(#pg1)" opacity=".85" />
+                <g stroke="#5b6cff" stroke-width="1.5" fill="none" opacity=".6">
+                  <path d="M66 70 H110 V35 H130" /><path d="M66 70 H110 V105 H130" />
+                  <path d="M186 35 H214 V70 H250" /><path d="M186 105 H214 V70 H250" />
+                </g>
+              </svg>
+            </div>
+            <h3>Real-Time Checkout Platform</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> Legacy checkout buckled under flash-sale traffic.</p>
+            <ul class="project-card__facts">
+              <li><span>Scale</span> 50K orders/min peak</li>
+              <li><span>Impact</span> +18% conversion, $30M+ ARR unlocked</li>
+            </ul>
+            <div class="project-card__tech"><span>Java</span><span>Kafka</span><span>Redis</span><span>AWS</span></div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-card__diagram">
+              <svg viewBox="0 0 320 140" role="img" aria-label="Event-driven platform diagram">
+                <defs>
+                  <linearGradient id="pg2" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#27c0ff" /><stop offset="1" stop-color="#2ee6a6" />
+                  </linearGradient>
+                </defs>
+                <circle cx="160" cy="70" r="22" fill="url(#pg2)" opacity=".85" />
+                <g fill="url(#pg2)" opacity=".7">
+                  <rect x="20" y="30" width="44" height="24" rx="6" /><rect x="20" y="86" width="44" height="24" rx="6" />
+                  <rect x="256" y="30" width="44" height="24" rx="6" /><rect x="256" y="86" width="44" height="24" rx="6" />
+                </g>
+                <g stroke="#2ee6a6" stroke-width="1.5" fill="none" opacity=".55">
+                  <path d="M64 42 L138 64" /><path d="M64 98 L138 76" />
+                  <path d="M182 64 L256 42" /><path d="M182 76 L256 98" />
+                </g>
+              </svg>
+            </div>
+            <h3>Event-Driven Data Platform</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> Teams needed real-time data without point-to-point chaos.</p>
+            <ul class="project-card__facts">
+              <li><span>Scale</span> 3B+ events/day</li>
+              <li><span>Impact</span> 12 teams onboarded; 65% fewer integration defects</li>
+            </ul>
+            <div class="project-card__tech"><span>Kafka</span><span>Spring Boot</span><span>DynamoDB</span><span>K8s</span></div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-card__diagram">
+              <svg viewBox="0 0 320 140" role="img" aria-label="Cloud migration diagram">
+                <defs>
+                  <linearGradient id="pg3" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ff7ac6" /><stop offset="1" stop-color="#7c5cff" />
+                  </linearGradient>
+                </defs>
+                <rect x="18" y="50" width="70" height="40" rx="8" fill="url(#pg3)" opacity=".75" />
+                <path d="M120 70 H180" stroke="#ff7ac6" stroke-width="2" fill="none" marker-end="url(#arr)" />
+                <g fill="url(#pg3)" opacity=".85">
+                  <rect x="210" y="22" width="36" height="22" rx="5" /><rect x="262" y="22" width="36" height="22" rx="5" />
+                  <rect x="210" y="58" width="36" height="22" rx="5" /><rect x="262" y="58" width="36" height="22" rx="5" />
+                  <rect x="210" y="94" width="36" height="22" rx="5" /><rect x="262" y="94" width="36" height="22" rx="5" />
+                </g>
+              </svg>
+            </div>
+            <h3>Monolith → Microservices Migration</h3>
+            <p class="project-card__problem"><strong>Problem:</strong> A monolith blocked independent delivery and scale.</p>
+            <ul class="project-card__facts">
+              <li><span>Scale</span> 60+ services, 4 squads</li>
+              <li><span>Impact</span> Deploy lead time down 80%; uptime 99.98%</li>
+            </ul>
+            <div class="project-card__tech"><span>Java</span><span>Kubernetes</span><span>AWS</span><span>Terraform</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. SYSTEM DESIGN SHOWCASE (animated SVG)
+         ============================================================ -->
+    <section class="section" id="systems">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">05 — System Design</span>
+          <h2 class="section__title">Architecture, visualized</h2>
+          <p class="section__sub">A high-scale, event-driven microservices ecosystem with animated data flow.</p>
+        </header>
+
+        <div class="sysdiagram glass-card reveal">
+          <svg viewBox="0 0 1000 460" role="img"
+            aria-label="High-scale e-commerce, event-driven microservices architecture diagram" class="sysdiagram__svg">
+            <defs>
+              <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1b1b2e" /><stop offset="1" stop-color="#23233f" />
+              </linearGradient>
+              <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#7c5cff" /><stop offset="1" stop-color="#27c0ff" />
+              </linearGradient>
+              <filter id="soft"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity=".35" /></filter>
+            </defs>
+
+            <!-- Edges (animated dashed flow) -->
+            <g class="sys-edges" stroke="url(#flow)" stroke-width="2.5" fill="none" stroke-linecap="round">
+              <path d="M150 90 H320" /><path d="M150 90 V230 H320" />
+              <path d="M470 90 H640" /><path d="M470 230 H640" />
+              <path d="M470 90 V370 H640" />
+              <path d="M790 90 V230" /><path d="M790 230 V370" />
+              <path d="M150 370 H320" />
+            </g>
+
+            <!-- Nodes -->
+            <g class="sys-nodes" filter="url(#soft)">
+              <g class="sys-node"><rect x="30" y="60" width="120" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="90" y="86">Clients</text><text x="90" y="104" class="sub">Web · Mobile</text></g>
+              <g class="sys-node"><rect x="30" y="200" width="120" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="90" y="226">CDN / Edge</text><text x="90" y="244" class="sub">CloudFront</text></g>
+              <g class="sys-node"><rect x="30" y="340" width="120" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="90" y="366">Auth</text><text x="90" y="384" class="sub">Identity / JWT</text></g>
+
+              <g class="sys-node"><rect x="320" y="60" width="150" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="395" y="86">API Gateway</text><text x="395" y="104" class="sub">Rate limit · Routing</text></g>
+              <g class="sys-node"><rect x="320" y="200" width="150" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="395" y="226">Order Service</text><text x="395" y="244" class="sub">Spring Boot</text></g>
+              <g class="sys-node"><rect x="320" y="340" width="150" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="395" y="366">Payment Service</text><text x="395" y="384" class="sub">Spring Boot</text></g>
+
+              <g class="sys-node"><rect x="640" y="60" width="150" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="715" y="86">Event Bus</text><text x="715" y="104" class="sub">Kafka</text></g>
+              <g class="sys-node"><rect x="640" y="200" width="150" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="715" y="226">Inventory</text><text x="715" y="244" class="sub">Consumer</text></g>
+              <g class="sys-node"><rect x="640" y="340" width="150" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="715" y="366">Notifications</text><text x="715" y="384" class="sub">Consumer</text></g>
+
+              <g class="sys-node"><rect x="850" y="60" width="120" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="910" y="86">Cache</text><text x="910" y="104" class="sub">Redis</text></g>
+              <g class="sys-node"><rect x="850" y="200" width="120" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="910" y="226">SQL</text><text x="910" y="244" class="sub">MySQL · Oracle</text></g>
+              <g class="sys-node"><rect x="850" y="340" width="120" height="60" rx="12" fill="url(#node)" stroke="#3a3a5c"/><text x="910" y="366">NoSQL</text><text x="910" y="384" class="sub">DynamoDB</text></g>
+            </g>
+
+            <!-- right-side connectors -->
+            <g class="sys-edges" stroke="url(#flow)" stroke-width="2.5" fill="none" stroke-linecap="round">
+              <path d="M790 90 H850" /><path d="M790 230 H850" /><path d="M790 370 H850" />
+            </g>
+
+            <!-- Animated flow particles -->
+            <g class="sys-particles" fill="#2ee6a6">
+              <circle r="4"><animateMotion dur="3s" repeatCount="indefinite" path="M150 90 H320"/></circle>
+              <circle r="4"><animateMotion dur="3.6s" repeatCount="indefinite" path="M470 230 H640"/></circle>
+              <circle r="4"><animateMotion dur="4.2s" repeatCount="indefinite" path="M470 90 V370 H640"/></circle>
+              <circle r="4"><animateMotion dur="3.2s" repeatCount="indefinite" path="M790 90 H850"/></circle>
+            </g>
+          </svg>
+
+          <div class="sysdiagram__legend">
+            <span><i style="background:#7c5cff"></i> Edge &amp; Gateway</span>
+            <span><i style="background:#27c0ff"></i> Services</span>
+            <span><i style="background:#2ee6a6"></i> Live data flow</span>
+            <span><i style="background:#3a3a5c"></i> Data stores</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. LEADERSHIP & IMPACT (counters)
+         ============================================================ -->
+    <section class="section" id="leadership">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">06 — Leadership &amp; Impact</span>
+          <h2 class="section__title">Multiplying the team, not just the code</h2>
+        </header>
+
+        <div class="leadership__grid">
+          <div class="metric-card glass-card reveal">
+            <div class="metric-card__num" data-count="25" data-suffix="+">0</div>
+            <p>Engineers led across multiple squads</p>
+          </div>
+          <div class="metric-card glass-card reveal">
+            <div class="metric-card__num" data-count="15" data-suffix="+">0</div>
+            <p>Engineers mentored to promotion</p>
+          </div>
+          <div class="metric-card glass-card reveal">
+            <div class="metric-card__num" data-count="120" data-suffix="+">0</div>
+            <p>Technical interviews conducted</p>
+          </div>
+          <div class="metric-card glass-card reveal">
+            <div class="metric-card__num" data-count="9" data-suffix="">0</div>
+            <p>Architecture RFCs driven to adoption</p>
+          </div>
+        </div>
+
+        <div class="leadership__cards">
+          <article class="glass-card reveal">
+            <h3>Team Leadership</h3>
+            <p>Built and led cross-functional squads through hyper-growth, setting clear goals,
+              healthy on-call culture, and outcome-driven roadmaps.</p>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Mentoring</h3>
+            <p>Founded an internal mentorship circle and a system-design study group; helped 15+
+              engineers level up to senior and staff.</p>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Hiring</h3>
+            <p>Designed the engineering interview loop, calibrated rubrics, and raised the hiring
+              bar while improving candidate experience.</p>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Technical Strategy</h3>
+            <p>Authored the cloud &amp; platform strategy, established RFC and architecture-review
+              processes, and aligned engineering with business priorities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. CERTIFICATIONS & ACHIEVEMENTS
+         ============================================================ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__kicker">07 — Certifications &amp; Achievements</span>
+          <h2 class="section__title">Credentials &amp; recognition</h2>
+        </header>
+
+        <div class="certs__grid">
+          <article class="cert-card glass-card reveal">
+            <div class="cert-card__icon">☁️</div>
+            <h3>AWS Certified Solutions Architect — Professional</h3>
+            <p>Amazon Web Services · 2023</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-card__icon">⎈</div>
+            <h3>Certified Kubernetes Administrator (CKA)</h3>
+            <p>CNCF · 2022</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-card__icon">🔷</div>
+            <h3>Oracle Certified Professional, Java SE</h3>
+            <p>Oracle · 2019</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-card__icon">🏆</div>
+            <h3>Engineering Excellence Award</h3>
+            <p>NimbusScale · 2023 — Platform reliability initiative</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-card__icon">🎤</div>
+            <h3>Conference Speaker</h3>
+            <p>Talks on event-driven architecture &amp; scaling microservices</p>
+          </article>
+          <article class="cert-card glass-card reveal">
+            <div class="cert-card__icon">📝</div>
+            <h3>Technical Author</h3>
+            <p>Published articles on system design &amp; engineering leadership</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. CONTACT
+         ============================================================ -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact glass-card reveal">
+          <div class="blob blob--contact" aria-hidden="true"></div>
+          <header class="section__head">
+            <span class="section__kicker">08 — Contact</span>
+            <h2 class="section__title">Let's build something resilient</h2>
+            <p class="section__sub">Open to Lead, Staff, Principal, and Engineering Manager opportunities.</p>
+          </header>
+
+          <div class="contact__links">
+            <a class="contact__link" href="mailto:prasanthkumar.cpk@gmail.com">
+              <span class="contact__ic">✉️</span>
+              <span><strong>Email</strong>prasanthkumar.cpk@gmail.com</span>
+            </a>
+            <a class="contact__link" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">
+              <span class="contact__ic">in</span>
+              <span><strong>LinkedIn</strong>/in/your-handle</span>
+            </a>
+            <a class="contact__link" href="https://github.com/your-handle" target="_blank" rel="noopener">
+              <span class="contact__ic">⌥</span>
+              <span><strong>GitHub</strong>/your-handle</span>
+            </a>
+          </div>
+
+          <a href="assets/resume.pdf" class="btn btn--primary btn--lg" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Prasanth Chintapalli — Lead Software Engineer</p>
+      <p class="footer__muted">Designed &amp; built with care · Dark theme · 60 FPS</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
