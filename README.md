@@ -30,6 +30,8 @@ python3 -m http.server 8080
 ```
 .
 ├── index.html              # Markup, all sections, SEO meta, JSON-LD
+├── robots.txt              # Crawler directives + sitemap reference
+├── sitemap.xml             # XML sitemap for search engines
 ├── README.md               # This file
 └── assets/
     ├── css/

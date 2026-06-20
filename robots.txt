@@ -1,0 +1,5 @@
+# robots.txt for https://prasanthcpk.github.io/
+User-agent: *
+Allow: /
+
+Sitemap: https://prasanthcpk.github.io/sitemap.xml
